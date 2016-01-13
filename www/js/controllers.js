@@ -20,6 +20,11 @@ angular.module('starter.controllers', [])
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
+
+  $scope.playVideo = function() {
+    var videoUrl = "http://7xloz0.com2.z0.glb.qiniucdn.com/video%2Ftronclass.mp4";
+    window.plugins.streamingMedia.playVideo(videoUrl);
+  }
 })
 
 .controller('ChatDetailCtrl', function($rootScope, $scope, $stateParams, Chats, $timeout) {
